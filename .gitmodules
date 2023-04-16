@@ -49,3 +49,12 @@
 [submodule "lisp/embark"]
 	path = lisp/embark
 	url = https://github.com/oantolin/embark.git
+[submodule "lisp/emacs-bazel-mode"]
+	path = lisp/emacs-bazel-mode
+	url = https://github.com/bazelbuild/emacs-bazel-mode.git
+[submodule "lisp/embark-consult"]
+	path = lisp/embark-consult
+	url = https://github.com/emacs-straight/embark-consult.git
+[submodule "lisp/orderless"]
+	path = lisp/orderless
+	url = https://github.com/oantolin/orderless.git
