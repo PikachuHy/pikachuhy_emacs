@@ -25,3 +25,27 @@
 [submodule "lisp/projectile"]
 	path = lisp/projectile
 	url = https://github.com/bbatsov/projectile.git
+[submodule "lisp/vertico"]
+	path = lisp/vertico
+	url = https://github.com/minad/vertico.git
+[submodule "lisp/compat"]
+	path = lisp/compat
+	url = https://github.com/emacs-compat/compat.git
+[submodule "lisp/marginalia"]
+	path = lisp/marginalia
+	url = https://github.com/minad/marginalia.git
+[submodule "lisp/consult"]
+	path = lisp/consult
+	url = https://github.com/minad/consult.git
+[submodule "lisp/yasnippet"]
+	path = lisp/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+[submodule "lisp/posframe"]
+	path = lisp/posframe
+	url = https://github.com/tumashu/posframe.git
+[submodule "lisp/markdown-mode"]
+	path = lisp/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode.git
+[submodule "lisp/embark"]
+	path = lisp/embark
+	url = https://github.com/oantolin/embark.git
