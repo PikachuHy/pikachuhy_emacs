@@ -1,0 +1,27 @@
+[submodule "lisp/lsp-bridge"]
+	path = lisp/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge.git
+[submodule "lisp/awesome-tab"]
+	path = lisp/awesome-tab
+	url = https://github.com/manateelazycat/awesome-tab.git
+[submodule "lisp/awesome-tray"]
+	path = lisp/awesome-tray
+	url = https://github.com/manateelazycat/awesome-tray.git
+[submodule "lisp/duplicate-line"]
+	path = lisp/duplicate-line
+	url = https://github.com/manateelazycat/duplicate-line.git
+[submodule "lisp/blink-search"]
+	path = lisp/blink-search
+	url = https://github.com/manateelazycat/blink-search.git
+[submodule "lisp/exec-path-from-shell"]
+	path = lisp/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell.git
+[submodule "lisp/color-rg"]
+	path = lisp/color-rg
+	url = https://github.com/manateelazycat/color-rg.git
+[submodule "lisp/all-the-icons.el"]
+	path = lisp/all-the-icons.el
+	url = https://github.com/domtronn/all-the-icons.el.git
+[submodule "lisp/projectile"]
+	path = lisp/projectile
+	url = https://github.com/bbatsov/projectile.git
