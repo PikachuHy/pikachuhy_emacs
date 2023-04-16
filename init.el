@@ -5,14 +5,52 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (setq cursor-type 'bar)
+
+(require 'cl-lib)
+
+(defun add-subdirs-to-load-path (search-dir)
+  (interactive)
+  (let* ((dir (file-name-as-directory search-dir)))
+    (dolist (subdir
+             
+             (cl-remove-if
+              #'(lambda (subdir)
+                  (or
+                   
+                   (not (file-directory-p (concat dir subdir)))
+                   
+                   (member subdir '("." ".." 
+                                    "dist" "node_modules" "__pycache__" 
+                                    "RCS" "CVS" "rcs" "cvs" ".git" ".github")))) 
+              (directory-files dir)))
+      (let ((subdir-path (concat dir (file-name-as-directory subdir))))
+        (when (cl-some #'(lambda (subdir-file)
+                           (and (file-regular-p (concat subdir-path subdir-file))
+                                ;; .so .dll 文件指非 Elisp 语言编写的 Emacs 动态库
+                                (member (file-name-extension subdir-file) '("el" "so" "dll"))))
+                       (directory-files subdir-path))
+          
+          (add-to-list 'load-path subdir-path t))
+
+        (add-subdirs-to-load-path subdir-path)))))
+
+(add-subdirs-to-load-path "~/.emacs.d/lisp")
+(add-to-list 'load-path "~/.emacs.d/lisp/vertico")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(wgrep orderless magit embark-consult embark marginalia consult vertico popon yasnippet markdown-mode posframe))
+ ;'(package-selected-packages
+ ;  '(wgrep orderless magit embark-consult embark marginalia consult vertico popon yasnippet markdown-mode posframe))
  '(tool-bar-mode nil))
+(require 'vertico)
+(require 'marginalia)
+(require 'embark)
+(require 'consult)
+(require 'yasnippet)
+(require 'posframe)
+
 (vertico-mode t)
 (marginalia-mode t)
 (setq wgrep-auto-save-buffer t)
