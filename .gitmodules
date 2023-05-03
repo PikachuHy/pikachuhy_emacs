@@ -64,3 +64,6 @@
 [submodule "lisp/vertico-posframe"]
 	path = lisp/vertico-posframe
 	url = https://github.com/tumashu/vertico-posframe.git
+[submodule "lisp/neotree"]
+	path = lisp/neotree
+	url = https://github.com/jaypei/emacs-neotree.git
