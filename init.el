@@ -119,3 +119,17 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
+(require 'find-file-in-project)
+
+;;; brew install enchant
+;;; echo "*:AppleSpell" >> ~/.config/enchant/enchant.ordering
+(require 'jinx)
+(add-hook 'emacs-startup-hook #'global-jinx-mode)
+
+(require 'all-the-icons-dired)
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+
+(require 'all-the-icons-completion)
+(all-the-icons-completion-mode)
+(add-hook 'marginalia-mode-hook #'all-the-icons-completion-marginalia-setup)
