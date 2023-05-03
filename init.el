@@ -107,3 +107,6 @@
 (projectile-mode 1)
 
 (require 'bazel)
+(setq bazel-buildifier-before-save t)
+
+(require 'cmake-mode)

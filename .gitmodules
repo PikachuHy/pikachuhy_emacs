@@ -58,3 +58,6 @@
 [submodule "lisp/orderless"]
 	path = lisp/orderless
 	url = https://github.com/oantolin/orderless.git
+[submodule "lisp/cmake"]
+	path = lisp/cmake
+	url = https://gitlab.kitware.com/cmake/cmake.git
