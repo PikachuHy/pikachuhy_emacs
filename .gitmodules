@@ -82,3 +82,9 @@
 [submodule "lisp/diredfl"]
 	path = lisp/diredfl
 	url = https://github.com/purcell/diredfl.git
+[submodule "lisp/eshell-git-prompt"]
+	path = lisp/eshell-git-prompt
+	url = https://github.com/xuchunyang/eshell-git-prompt.git
+[submodule "lisp/dash"]
+	path = lisp/dash
+	url = https://github.com/magnars/dash.el.git

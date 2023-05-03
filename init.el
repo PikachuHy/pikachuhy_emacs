@@ -139,3 +139,6 @@
 (add-hook 'dired-mode 'diredfl-mode)
 (when (string= system-type "darwin")       
   (setq dired-use-ls-dired nil))
+
+(require 'eshell-git-prompt)
+(eshell-git-prompt-use-theme 'multiline)
