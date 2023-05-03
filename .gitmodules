@@ -73,3 +73,6 @@
 [submodule "lisp/jinx"]
 	path = lisp/jinx
 	url = https://github.com/minad/jinx.git
+[submodule "lisp/all-the-icons-dired"]
+	path = lisp/all-the-icons-dired
+	url = https://github.com/jtbm37/all-the-icons-dired.git
