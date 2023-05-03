@@ -133,3 +133,9 @@
 (require 'all-the-icons-completion)
 (all-the-icons-completion-mode)
 (add-hook 'marginalia-mode-hook #'all-the-icons-completion-marginalia-setup)
+
+;;; not work on MacOS ???
+(require 'diredfl)
+(add-hook 'dired-mode 'diredfl-mode)
+(when (string= system-type "darwin")       
+  (setq dired-use-ls-dired nil))

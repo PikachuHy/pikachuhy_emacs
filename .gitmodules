@@ -79,3 +79,6 @@
 [submodule "lisp/all-the-icons-completion"]
 	path = lisp/all-the-icons-completion
 	url = https://github.com/iyefrat/all-the-icons-completion.git
+[submodule "lisp/diredfl"]
+	path = lisp/diredfl
+	url = https://github.com/purcell/diredfl.git
