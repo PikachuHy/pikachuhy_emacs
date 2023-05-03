@@ -76,3 +76,6 @@
 [submodule "lisp/all-the-icons-dired"]
 	path = lisp/all-the-icons-dired
 	url = https://github.com/jtbm37/all-the-icons-dired.git
+[submodule "lisp/all-the-icons-completion"]
+	path = lisp/all-the-icons-completion
+	url = https://github.com/iyefrat/all-the-icons-completion.git
