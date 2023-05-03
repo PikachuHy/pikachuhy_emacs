@@ -67,3 +67,6 @@
 [submodule "lisp/neotree"]
 	path = lisp/neotree
 	url = https://github.com/jaypei/emacs-neotree.git
+[submodule "lisp/find-file-in-project"]
+	path = lisp/find-file-in-project
+	url = https://github.com/redguardtoo/find-file-in-project.git
