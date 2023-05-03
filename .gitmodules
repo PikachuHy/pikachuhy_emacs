@@ -61,3 +61,6 @@
 [submodule "lisp/cmake"]
 	path = lisp/cmake
 	url = https://gitlab.kitware.com/cmake/cmake.git
+[submodule "lisp/vertico-posframe"]
+	path = lisp/vertico-posframe
+	url = https://github.com/tumashu/vertico-posframe.git

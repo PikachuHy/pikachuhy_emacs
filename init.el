@@ -112,3 +112,6 @@
 (require 'cmake-mode)
 
 (global-set-key (kbd "C-<tab>") 'awesome-tab-forward-tab)
+
+(require 'vertico-posframe)
+(vertico-posframe-mode 1)
