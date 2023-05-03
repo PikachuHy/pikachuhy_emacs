@@ -110,3 +110,5 @@
 (setq bazel-buildifier-before-save t)
 
 (require 'cmake-mode)
+
+(global-set-key (kbd "C-<tab>") 'awesome-tab-forward-tab)
